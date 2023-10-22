@@ -1,0 +1,358 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500;700&family=Roboto:wght@300;400&display=swap");
+/******
+RESETTING STYLES
+ */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, li {
+  font-size: 18px;
+}
+
+a {
+  color: #71945f;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+  font-family: "Roboto Slab", serif;
+  scroll-margin-top: 120px;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-top: 40px;
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-top: 30px;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+body {
+  background: #eee;
+}
+
+/*
+CONTAINER STYLES
+ */
+.container {
+  background: #fff;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/*
+SECTION STYLES
+ */
+header, footer {
+  padding: 10px 20px;
+}
+@media (min-width: 720px) {
+  header, footer {
+    padding: 10px 45px;
+  }
+}
+header img, footer img {
+  height: 50px;
+  display: flex;
+}
+
+main {
+  padding: 20px;
+}
+@media (min-width: 720px) {
+  main {
+    padding: 45px;
+  }
+}
+
+header, footer {
+  background: #71945f;
+  color: white;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 0;
+}
+@media (min-width: 720px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+header .logo-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo-container #hamburger, header .logo-container #close {
+  background: none;
+  border: 0;
+  color: white;
+  font-size: 3rem;
+}
+@media (min-width: 720px) {
+  header .logo-container #hamburger, header .logo-container #close {
+    display: none;
+  }
+}
+header .logo-container #close {
+  display: none;
+  font-weight: 400;
+}
+header nav {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+@media (min-width: 720px) {
+  header nav {
+    flex-direction: row;
+    margin: 0;
+    display: flex;
+    position: relative;
+  }
+}
+header nav div.dropdown {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 720px) {
+  header nav div.dropdown {
+    padding: 0;
+    flex-direction: row;
+    font-size: 1rem;
+    align-items: center;
+    position: relative;
+  }
+  header nav div.dropdown:hover .submenu {
+    display: flex;
+  }
+  header nav div.dropdown:hover a:hover:not(.dropdown-item) {
+    background-color: #71945f;
+    color: white;
+  }
+}
+header nav a {
+  font-size: 2rem;
+  font-family: "Roboto Slab", serif;
+  color: white;
+  text-decoration: none;
+  opacity: 0.8;
+  transition: 0.2s opacity;
+  padding: 20px;
+}
+header nav a:hover {
+  opacity: 1;
+}
+@media (min-width: 720px) {
+  header nav a {
+    font-size: 1.2rem;
+    padding: 18px;
+  }
+}
+header nav .submenu {
+  display: none;
+  flex-direction: column;
+}
+header nav .submenu a {
+  padding: 10px 20px;
+  text-align: center;
+}
+@media (min-width: 720px) {
+  header nav .submenu {
+    background: #8bab7b;
+    position: absolute;
+    top: 65px;
+  }
+  header nav .submenu.ideate {
+    right: 200px;
+  }
+  header nav .submenu.prototype {
+    right: 100px;
+  }
+}
+
+main {
+  display: grid;
+  grid-gap: 20px;
+}
+@media (min-width: 720px) {
+  main {
+    grid-template-columns: 1fr 3fr;
+  }
+}
+
+aside #outline {
+  position: sticky;
+  top: 100px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+aside #outline a {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #71945f;
+}
+aside #outline a.heading-level-1 {
+  font-weight: 400;
+}
+aside #outline a.heading-level-2 {
+  margin-left: 20px;
+  font-weight: 300;
+}
+aside #outline a.heading-level-3 {
+  margin-left: 40px;
+  font-weight: 300;
+}
+
+article p {
+  margin-bottom: 20px;
+  line-height: 2;
+  font-size: 18px;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.8rem;
+}
+footer a {
+  color: white;
+}
+
+.show {
+  display: flex !important;
+}
+
+.hide {
+  display: none !important;
+}
+
+table {
+  width: 100%;
+  margin: 20px 0;
+}
+table th {
+  padding: 10px;
+  background: #71945f;
+  color: white;
+  font-weight: 800;
+}
+table td {
+  border: 1px solid #71945f;
+  vertical-align: top;
+  padding: 10px;
+}
+table td ul li {
+  list-style: none;
+  word-break: break-all;
+  font-size: 0.9rem;
+  text-align: center;
+  margin: 5px;
+}
+
+.gamification-elements {
+  margin: 25px 0;
+}
+.gamification-elements .row {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+.gamification-elements .row .element-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gamification-elements .row p {
+  margin: 0;
+  padding: 0;
+}
+
+.elements li {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+iframe.video {
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+
+iframe.prototype {
+  width: 100%;
+  aspect-ratio: 4/3;
+}
+
+#top-button {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #71945f; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 2rem; /* Increase font size */
+  font-weight: 600;
+}
+
+.references p {
+  padding-left: 70px;
+  text-indent: -70px;
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -68,7 +68,7 @@ console.log(outline)
 if (outline!==null){
     let outline_str = ""
 
-    const headings = document.querySelectorAll("h1, h2, h3, h4, h5, h6")
+    const headings = document.querySelectorAll("h1, h2, h3")
 
     headings.forEach((heading)=>{
         const heading_level = heading.tagName.charAt(1)

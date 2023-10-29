@@ -62,6 +62,11 @@ h3 {
   margin-top: 30px;
 }
 
+h4 {
+  font-size: 1.2rem;
+  margin-top: 15px;
+}
+
 #root, #__next {
   isolation: isolate;
 }
@@ -75,7 +80,7 @@ CONTAINER STYLES
  */
 .container {
   background: #fff;
-  max-width: 1400px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -250,6 +255,10 @@ aside #outline a.heading-level-2 {
 }
 aside #outline a.heading-level-3 {
   margin-left: 40px;
+  font-weight: 300;
+}
+aside #outline a.heading-level-4 {
+  margin-left: 60px;
   font-weight: 300;
 }
 

@@ -192,7 +192,7 @@ header nav a:hover {
 }
 @media (min-width: 720px) {
   header nav a {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     padding: 18px;
   }
 }
@@ -208,7 +208,7 @@ header nav .submenu a {
   header nav .submenu {
     background: #8bab7b;
     position: absolute;
-    top: 65px;
+    top: 60px;
   }
   header nav .submenu.ideate {
     right: 200px;

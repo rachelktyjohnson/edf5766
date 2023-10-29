@@ -6,25 +6,27 @@ const navigation = `
             <button id="close">x</button>
         </div>
         <nav>
+        <a href="prelude.html">Prelude</a>
             <div class="dropdown">
-                <a data-anchor="prelude">Prelude</a>
-                <div class="submenu submenu-prelude">
-                    <a href="emapathise.html">Empathise</a>
-                    <a href="define.html">Define</a>
+                <a data-anchor="dt">Design Thinking</a>
+                <div class="submenu submenu-dt">
+                    <a href="dt-introduction.html">Introduction</a>
+                    <a href="dt-literature.html">Literature Review</a>
+                    <a href="dt-application.html">Application</a>
                 </div>
             </div>
             <div class="dropdown">
-                <a data-anchor="solution">Solution</a>
-                <div class="submenu submenu-solution">
-                    <a href="emapathise.html">Ideate</a>
-                    <a href="define.html">Prototype</a>
-                    <a href="test.html">Test</a>
-                    <a href="iteration.html">Iteration</a>
+                <a data-anchor="process">Process</a>
+                <div class="submenu submenu-process">
+                    <a href="preparation.html">Preparation</a>
+                    <a href="design-journey.html">Design Journey</a>
+                    <a href="post-design.html">Post-Design</a>
                 </div>
             </div>
-            
-            <a href="afterword.html">Critique</a>
+          
+            <a href="references.html">Critique</a>
             <a href="references.html">References</a>
+            
         </nav>
     `
 

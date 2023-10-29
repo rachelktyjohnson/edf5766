@@ -18,7 +18,7 @@ const navigation = `
                 </div>
             </div>
           
-            <a href="references.html">Critique</a>
+            <a href="critique.html">Critique</a>
             <a href="references.html">References</a>
             
         </nav>

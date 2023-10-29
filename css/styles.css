@@ -75,7 +75,7 @@ CONTAINER STYLES
  */
 .container {
   background: #fff;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
@@ -277,6 +277,7 @@ footer a {
 
 table {
   width: 100%;
+  table-layout: fixed;
   margin: 20px 0;
 }
 table th {
@@ -291,11 +292,12 @@ table td {
   padding: 10px;
 }
 table td ul li {
-  list-style: none;
+  list-style-type: circle;
+  padding-left: 10px;
   word-break: break-all;
-  font-size: 0.9rem;
-  text-align: center;
-  margin: 5px;
+  font-size: 1rem;
+  text-align: left;
+  margin-left: 25px;
 }
 
 .gamification-elements {

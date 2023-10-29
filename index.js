@@ -6,15 +6,9 @@ const navigation = `
             <button id="close">x</button>
         </div>
         <nav>
-        <a href="prelude.html">Prelude</a>
-            <div class="dropdown">
-                <a data-anchor="dt">Design Thinking</a>
-                <div class="submenu submenu-dt">
-                    <a href="dt-introduction.html">Introduction</a>
-                    <a href="dt-literature.html">Literature Review</a>
-                    <a href="dt-application.html">Application</a>
-                </div>
-            </div>
+            <a href="prelude.html">Prelude</a>
+            <a href="design-thinking.html">Design Thinking</a>
+
             <div class="dropdown">
                 <a data-anchor="process">Process</a>
                 <div class="submenu submenu-process">

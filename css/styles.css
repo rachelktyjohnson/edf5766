@@ -370,4 +370,12 @@ iframe.prototype {
   text-indent: -70px;
 }
 
+.design-thinking-examples {
+  margin-left: 25px;
+  margin-bottom: 10px;
+}
+.design-thinking-examples li {
+  padding-left: 10px;
+}
+
 /*# sourceMappingURL=styles.css.map */

@@ -378,4 +378,8 @@ iframe.prototype {
   padding-left: 10px;
 }
 
+.plan a.stage {
+  color: white;
+}
+
 /*# sourceMappingURL=styles.css.map */
